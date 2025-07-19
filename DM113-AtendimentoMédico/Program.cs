@@ -1,4 +1,5 @@
 using DM113_AtendimentoMedico.Service;
+using SoapCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,16 +8,8 @@ builder.Services.AddSingleton<IConsultaService, ConsultaService>();
 
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
+app.UseSoapEndpoint<IConsultaService>("/Service.asmx", new SoapEncoderOptions());
 
-app.UseHttpsRedirection();
-
-app.MapGet("/", () =>
-{
-   
-});
+//app.UseHttpsRedirection();
 
 app.Run();

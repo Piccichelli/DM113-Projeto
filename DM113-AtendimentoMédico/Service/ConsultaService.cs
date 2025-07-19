@@ -24,6 +24,7 @@ namespace DM113_AtendimentoMedico.Service
     public class ConsultaService : IConsultaService
     {
         private static List<ConsultaItem> consultas = new List<ConsultaItem>();
+        private int contId = 0;
 
         public ConsultaItem[] GetConsultas()
         {
@@ -42,7 +43,8 @@ namespace DM113_AtendimentoMedico.Service
 
         public void CreateConsultaItem(ConsultaItem item)
         {
-            item.Id = consultas.Count + 1;
+            item.Id = contId + 1;
+            contId++;
             consultas.Add(item);
         }
 
@@ -55,6 +57,7 @@ namespace DM113_AtendimentoMedico.Service
             }
 
             existente.Data = item.Data;
+            existente.Cliente.Nome = item.Cliente.Nome;
             existente.Cliente.Telefone = item.Cliente.Telefone;
             existente.Cliente.Email = item.Cliente.Email;
         }

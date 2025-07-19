@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM113-AtendimentoMedico", "DM113-AtendimentoMédico\DM113-AtendimentoMedico.csproj", "{49615AB9-BB04-4AC4-8200-F1C20D55E426}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DM113-AtendimentoMedico-Consumer", "DM113-AtendimentoMedico-Consumer\DM113-AtendimentoMedico-Consumer.csproj", "{A910AD71-53FF-4F33-9C0E-398340B5107B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{49615AB9-BB04-4AC4-8200-F1C20D55E426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49615AB9-BB04-4AC4-8200-F1C20D55E426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49615AB9-BB04-4AC4-8200-F1C20D55E426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A910AD71-53FF-4F33-9C0E-398340B5107B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A910AD71-53FF-4F33-9C0E-398340B5107B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A910AD71-53FF-4F33-9C0E-398340B5107B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A910AD71-53FF-4F33-9C0E-398340B5107B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
